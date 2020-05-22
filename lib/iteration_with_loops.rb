@@ -6,13 +6,14 @@ def find_min_in_nested_arrays(src)
 
   while counter < src.length do
     inner_counter = 0
-    min = 0
+    min = 999
     while inner_counter < src[counter].length do
       if src[counter][inner_counter] < min
         min = src[counter][inner_counter]
       end
       inner_counter += 1
     end
+
     final_array.push(min)
     counter += 1
   end
